@@ -1,0 +1,10 @@
+What Each Library Handles in Your Projectstreamlit: Renders the web interface, browser chat bubbles, sidebar management, and drop-down source tabs.
+langchain-core: The foundational library that provides base structures like the Document object and BaseRetriever tracking.
+class.langchain-text-splitters: The dedicated package containing RecursiveCharacterTextSplitter, which handles intelligent sentence-boundary chunking [INDEX].
+langchain-classic: Contains the pipeline blueprint ConversationalRetrievalChain used to connect chat memory [INDEX].
+langchain-community: Contains third-party tool integrations like DirectoryLoader and TextLoader.
+langchain-groq: The native extension module that connects your app directly to Groq's high-speed cloud endpoint.
+sentence-transformers: Generates local vector embeddings (all-MiniLM-L6-v2) and powers the Cross-Encoder judge model (ms-marco-MiniLM-L-6-v2).
+chromadb: The lightweight, file-based vector database stored right inside your project directory folder (./chroma_db).
+python-dotenv: Securely reads your secret environment variable keys out of the hidden .env text file.
+pypdf: A helper library that works under the hood so your ingestion code can read structural text layouts inside .pdf files if you expand your app later.
